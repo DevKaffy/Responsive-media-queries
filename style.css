@@ -1,0 +1,158 @@
+html, body{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./Images/bg-intro-desktop.png');
+    background-color:#ff7978c9;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:5rem auto;
+    width: 70%;
+}
+h1{
+    color: white;
+    font-weight: 800;
+}
+.side{
+    display: flex;
+    align-items: center;
+}
+.side .side-content{
+    /* margin-top: 10rem; */
+    max-width: 25rem;
+   
+}
+.side p{
+    color: white;
+    line-height: 1.5rem;
+}
+.top button{
+    width: 100%;
+    height:3rem;
+    color: #f3ecff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 1px 1px 5px rgb(24, 24, 36);
+}
+.color button{
+    background-color: #5d54a3;
+}
+.b button{
+    background-color: #37cc8a;
+    width:90%;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    
+}
+
+form{
+    background-color: #ffffff;
+    padding:1rem 1rem;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(24, 24, 36);
+
+}
+ form .formInput{
+     width: 90%;
+ }
+ form .formInput p{
+     font-size: 10px;
+     color:red;
+     text-align: right;
+ }
+input{
+    border-radius: 5px;
+    width:100%;
+    margin-bottom: 10px;
+    height:3rem;
+    outline: none;
+    border: 1px solid rgb(159, 159, 175);
+}
+span.click{
+    font-size: 10px;
+    color:#c9c8ce;
+}
+ span.terms{
+    font-size: 10px;
+    color: #ff7977;
+}
+
+.firstName{
+    display: none;
+}
+.lastName{
+    display: none;
+}
+.email{
+    display: none;
+}
+.password{
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    main{
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+    .side{
+        order: -1;
+        margin-top: 0;
+    }
+    .side .side-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+    .side-content h1{
+        text-align: center;
+    }
+    .side-content p{
+        text-align: center;
+    }
+    .top{
+        display: flex;
+        justify-content: center;
+    }
+    .top button{
+        width: 70%;
+    }
+    form{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .b button{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .terms-policy{
+        display: flex;
+        flex-direction: column;
+        justify-content: centeclassr;
+        align-items: center;
+    }
+    .right{
+    margin-bottom: 3rem;
+    }
+
+   
+}
